@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     display: flex;
     justify-content: center;
@@ -7,6 +8,7 @@ body {
     background-color: #ffcc99; /* Light orange tone */
 }
 
+/* Calculator container styling */
 .calculator {
     background-color: white;
     padding: 20px;
@@ -14,9 +16,10 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Display input styling */
 #display {
     width: 100%;
-    height: 40px;
+    height: 50px;
     font-size: 24px;
     text-align: right;
     margin-bottom: 10px;
@@ -24,20 +27,38 @@ body {
     border-radius: 5px;
 }
 
+/* Buttons grid styling */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Adds spacing between buttons */
 }
 
-.button {
-    padding: 20px;
+/* Button styling */
+button {
+    height: 50px;
     font-size: 18px;
+    background-color: #f2f2f2; /* Light gray background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.button:hover {
-    background-color: #f2f2f2; /* Light gray on hover */
+button:hover {
+    background-color: #e6e6e6; /* Slightly darker gray on hover */
 }
 
+/* Equal button styling */
 .equal {
-    grid-column: span 2; /* Make equal button span two columns */
+    background-color: #ff9933; /* Orange color for equal button */
+    color: white;
+}
+
+.equal:hover {
+    background-color: #ff7700; /* Darker orange on hover */
+}
+
+/* Zero button spans two columns */
+.zero {
+    grid-column: span 2; /* Make zero button span two columns */
 }
